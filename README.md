@@ -36,12 +36,19 @@ Selecting a suitable model or combination of models based on factors, such as sp
 * [Which LLM to choose for your use case?](https://ubiops.com/which-llm-to-choose-for-your-use-case/#:~:text=While%20choosing%20an%20LLM%20that,procedures%20and%20biases%2C%20and%20licensing.)
 * [6x Key factors to consider in choosing an LLM](https://www.solitontech.com/key-factors-to-consider-in-llm/)
 
-## 2) :blue_book: Reduce model size 
+## 📘 2) Reduce model size 
 After chosing the suitable model family, you should consider models with fewer parameters and other techniques that reduce model size.
 * Model parameter size (i.e. 7B, 13B ... 175B)
 * Quantization (= reducing the precision of the model's parameters)
 * Pruning (= removing unnecessary weights, neurons, channels or layers)
 * Knowledge Distillation (= training smaller model that mimics a larger model)
+
+### Tools & Frameworks
+
+- [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) – Easy-to-use GPTQ quantization library for squeezing LLMs into 4‑bit/8‑bit weights for faster, cheaper inference.
+- [ExllamaV2](https://github.com/turboderp/exllamav2) – Optimized CUDA & quantization backend for fast inference of LLaMA‑style models.
+
+
 
 ### Papers 
 * Frantar and Alistarh ["SparseGPT: massive Language Models Can be Accurately Pruned in One-Shot"](https://arxiv.org/abs/2301.00774) arXiv preprint arXiv:2301.00774 (2023).
@@ -58,6 +65,12 @@ After chosing the suitable model family, you should consider models with fewer p
 * [mlabonne/llm-course#quantization](https://github.com/mlabonne/llm-course?tab=readme-ov-file#7-quantization)
 ## 3) :blue_book: Use open source models
 Consider self-hosting models instead of using proprietary models if you have capable developers in house. Still, have an oversight of Total Cost of Ownership, when benchmarking managed LLMs vs. setting up everything on your own. 
+
+### Tools & Frameworks
+
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) – C/C++ CPU+GPU engine for running LLaMA-family models locally with low memory requirements.
+- [Oobabooga Text Generation WebUI](https://github.com/oobabooga/text-generation-webui) – User-friendly interface to run quantized and GGUF-based models like Mistral, LLaMA, or WizardLM locally.
+
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
@@ -81,6 +94,12 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 **Output tokens:**
 * Prompting to instruct the LLM how many output tokens are desired
 * Prompting to instruct the LLM to be concise in the answer, adding no explanation text to the expected answer
+
+### Tools & Frameworks
+
+- [LLMLingua](https://github.com/microsoft/LLMLingua) – Prompt compression tool from Microsoft that reduces input token count by summarizing or rewriting prompts with minimal quality loss.
+- [ShortGPT](https://github.com/jina-ai/shortgpt) – Pipeline for generating optimized YouTube-style scripts using small LLMs and token-efficient prompting.
+
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
