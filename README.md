@@ -98,7 +98,8 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 ### Tools & Frameworks
 
 - [LLMLingua](https://github.com/microsoft/LLMLingua) – Prompt compression tool from Microsoft that reduces input token count by summarizing or rewriting prompts with minimal quality loss.
-- [ShortGPT](https://github.com/jina-ai/shortgpt) – Pipeline for generating optimized YouTube-style scripts using small LLMs and token-efficient prompting.
+- [ShortGPT](https://github.com/RayVentura/ShortGPT) – Experimental AI framework for automating short/video content creation via LLM‑driven scripts, voiceovers, captions, and token‑efficient prompting.
+
 
 
 ### Papers  
